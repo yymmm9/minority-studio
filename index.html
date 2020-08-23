@@ -3,11 +3,80 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>少數工作室 Minority Studio</title>
+    <meta charset="utf-8" />
+	  <meta name="format-detection" content="telephone=no" />
+	  <meta name="apple-mobile-web-app-capable" content="yes" />
+	  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes" />
+
+  	<title>少數工作室 Minority Studio</title>
+
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+<!-- 
+    <link rel="icon" type="image/png" href="/images/icons/icon-72x72.png" sizes="72x72" />
+    <link rel="icon" type="image/png" href="/images/icons/icon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/images/icons/icon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png" sizes="192x192" /> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+
+    <meta name="msapplication-TileColor" content="#f3f3f3">
+    <meta name="theme-color" content="#f3f3f3">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="少數工作室 Minority Studio">
+    <meta property="og:description" content="你的网站将是一部电影">
+    <meta property="og:image" content="https://minority.studio/icon/index-og-image-min.jpg">
+    <meta property="og:url" content="https://minority.studio/">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+
     <link href="/src/main.css" rel="stylesheet" type="text/css" />
+    <link href="/src/index.css" rel="stylesheet" type="text/css" />
+
   </head>
-  
   <body>
-    <!-- <script src="/src/script.js"></script> -->
+    
+    <!-- <header id="header" class="nr"></header> -->
+
+	  <div class="overlay" id="overlay"></div>
+
+    <!-- <div class="cookie comp">
+      <p>🍪 This website uses <u>cookies</u></p>
+      <svg t="1596294490013" class="icon close" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="799" ><path d="M585.412525 512.594747L973.601616 124.418586c19.600808-19.600808 19.600808-51.898182 0-71.49899l-2.120404-2.120404c-19.600808-19.600808-51.898182-19.600808-71.49899 0L511.793131 439.518384 123.61697 50.799192c-19.600808-19.600808-51.898182-19.600808-71.49899 0l-2.120404 2.120404c-20.11798 19.600808-20.11798 51.898182 0 71.49899l388.189091 388.189091L49.997576 900.783838c-19.587879 19.600808-19.587879 51.898182 0 71.49899l2.120404 2.120404c19.600808 19.600808 51.898182 19.600808 71.49899 0L511.793131 586.214141l388.189091 388.176162c19.600808 19.600808 51.898182 19.600808 71.49899 0l2.120404-2.120404c19.600808-19.600808 19.600808-51.898182 0-71.49899L585.412525 512.594747z m0 0" p-id="800"></path></svg>
+    </div> -->
+
+    <div class="grad"></div>
+    <main>
+      <div class="intro">
+        <div class="intro-text">
+          <p>II. 视觉效果网站</p>
+          <h1>结合前卫的科技，不受限地传递故事，让你的网站化身为一部电影。”</h1>
+        </div>
+
+        <div class="cta cta--contact">
+          <a href="mailto:info@minority.studio">info@minority.studio</a>
+          <p onclick="cta()"><u>Wechat:</u> minority_studio</p>
+        </div>
+
+        <div id="container" style="transform: translatey(2vw);"></div>
+      </div>
+
+    </main>
+
+    <script src="./src/essentials.js" async></script>
+    
+    <script src="/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+    <script src="/dist/TrackballControls.js"></script>
+    <script type="module" src="/src/scene.js"></script>
+    <script>
+      function cta() {
+        alert("添加我们的微信号: minority_studio");
+      }
+    </script>
+
   </body>
-</html>
+    
+    
