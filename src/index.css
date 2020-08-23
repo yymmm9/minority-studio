@@ -40,7 +40,7 @@ p{
   z-index: 1;
 
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(45, 43, 45, 0) 64%, #FFFFFF 100%);
+  background: linear-gradient(180deg, rgba(45, 43, 45, 0) 64%, rgb(214, 214, 214) 100%);
 }
 
 
