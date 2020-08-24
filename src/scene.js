@@ -17,9 +17,9 @@ varying vec3 vNormal;
 void main(){
     vec2 newUV = (vUv - vec2(0.5))*resolution.zw + vec2(0.5);
 
-    vec3 light = vec3(0.);
-    //vec3 skyColor = vec3(1.000, 1.000, 0.547);
-    //vec3 groundColor = vec3(0.562, 0.275, 0.111);
+    vec3 light = vec3(0.1);
+    // vec3 skyColor = vec3(1.000, 1.000, 0.547);
+    // vec3 groundColor = vec3(0.562, 0.275, 0.111);
 
     // vec3 skyColor = vec3(0.8, 0.6, 1.0);
     // vec3 groundColor = vec3(0.3, 0.1, 0.6);
@@ -138,8 +138,9 @@ void main() {
 
     vec3 newPosition = position*(noise + 0.5);
 
+    // vColor = hsv2rgb(vec3(noise*0.1 + 0.03, 0.8, 0.8));
     // vColor = hsv2rgb(vec3(noise*0.9, 0.1, 0.65));
-    vColor = hsv2rgb(vec3(noise*0.7, 0., 0.8));
+    vColor = hsv2rgb(vec3(noise*0.5 + 0.01, 0.3, 0.9));
 
     vNormal = normal;
 
@@ -270,7 +271,6 @@ export default class Sketch{
         value: new THREE.Vector2(1, 1)
       }
     },
-
     vertexShader: vertex,
     fragmentShader: fragment
   });
