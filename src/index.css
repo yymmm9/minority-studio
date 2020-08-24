@@ -28,6 +28,12 @@ p{
   opacity: .5;
 }
 
+h1.comment::before{
+  content:'“';
+  position: absolute;
+  transform: translatex(-100%);
+}
+
 .grad{
   position: fixed;
   width: 100vw;
@@ -81,14 +87,14 @@ p{
   border-radius: 12px;
   background: transparent;
   border: 1px solid #fff;
-    color: #fff;
+  color: #fff;
+  font-weight: 300!important;
 }
 
 .cta.btn{
-    
     background: #0071E3;
     color: #fff;
-    border: none;
+    border: 1px solid #0071E3;
     
 }
 
