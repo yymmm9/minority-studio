@@ -14,7 +14,7 @@ html, body{
   top: 10%;
   
   max-width: 580px;
-  padding: 3vw 18vw 3vw 6vw;
+  padding: 3vw 8vw 3vw 6vw;
 
   z-index: 1;
   pointer-events: none;
