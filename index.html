@@ -56,15 +56,25 @@
           <h1>结合前卫的科技，不受限地传递故事，让你的网站化身为一部电影。”</h1>
         </div>
 
-        <div class="cta cta--contact">
-          <a href="mailto:info@minority.studio">info@minority.studio</a>
-          <p onclick="cta()"><u>Wechat:</u> minority_studio</p>
+        <div class="cta-container cta--contact flex">
+          <a class="btn" href="mailto:info@minority.studio">邮件我们</a>
+          <p class="cta btn" id="cta--contact">添加微信</p>
         </div>
 
         <div id="container" style="transform: translatey(2vw);"></div>
       </div>
 
     </main>
+
+    <div id="block"></div>
+    <div class="rta rta--wechat" id="rta--wechat">
+				<div class="dragger"></div>
+				
+				<div class="rta--wechat-content rounded" >
+					<img width="100%" src="/press/qr-wechat-min.jpg">
+				</div>
+        <p class="hint">长按图片或搜寻: minority_studio</p>
+    </div>
 
     <script src="./src/essentials.js" async></script>
     
@@ -73,9 +83,16 @@
     <script src="/dist/TrackballControls.js"></script>
     <script type="module" src="/src/scene.js"></script>
     <script>
-      function cta() {
-        alert("添加我们的微信号: minority_studio");
-      }
+      document.querySelector("#cta--contact").addEventListener("click", (event) => {
+        document.getElementById('rta--wechat').classList.add("show");
+        document.getElementById('block').classList.add("show");
+        // alert("添加我们的微信号: minority_studio");
+      });
+
+    document.querySelector("#block, .dragger").addEventListener("click", (event) => {
+      document.getElementById('rta--wechat').classList.remove("show");
+      document.getElementById('block').classList.remove("show");
+    });
     </script>
 
   </body>
