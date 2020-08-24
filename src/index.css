@@ -103,8 +103,14 @@ h1.comment::before{
 }
 .cta--contact{
   position: absolute;
-  bottom: 32vw;
+  bottom: 140px;
   z-index: 1;
+}
+
+@media only screen and (min-width: 542px){
+  .cta--contact{
+    bottom:300px;
+  }
 }
 
 .cta--contact a, .cta--contact p{
