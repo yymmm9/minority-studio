@@ -140,7 +140,7 @@ void main() {
 
     // vColor = hsv2rgb(vec3(noise*0.1 + 0.03, 0.8, 0.8));
     // vColor = hsv2rgb(vec3(noise*0.9, 0.1, 0.65));
-    vColor = hsv2rgb(vec3(noise*0.5 + 0.01, 0.3, 0.9));
+    vColor = hsv2rgb(vec3(noise*0.5 + 0.01, 0.2, 0.9));
 
     vNormal = normal;
 
