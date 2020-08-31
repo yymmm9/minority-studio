@@ -46,7 +46,8 @@ h1.comment::before{
   z-index: 1;
 
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(45, 43, 45, 0) 64%, rgb(214, 214, 214) 100%);
+  /* background: linear-gradient(180deg, rgba(45, 43, 45, 0) 64%, rgb(214, 214, 214) 100%); */
+  background: linear-gradient(180deg, rgba(19, 19, 19, 0) 60%, #131313 100%);
 }
 
 .flex{
