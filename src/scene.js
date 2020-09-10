@@ -24,8 +24,11 @@ void main(){
     // vec3 skyColor = vec3(0.8, 0.6, 1.0);
     // vec3 groundColor = vec3(0.3, 0.1, 0.6);
 
-    vec3 skyColor = vec3(0.76, 0.2, 1.0);
-    vec3 groundColor = vec3(0.3, 0.1, 0.7);
+    // vec3 skyColor = vec3(0.76, 0.2, 1.0);
+    // vec3 groundColor = vec3(0.3, 0.1, 0.7);
+
+    vec3 skyColor = vec3(0.8, 0.6, 1.0);
+    vec3 groundColor = vec3(0.3, 0.1, 0.6);
 
     vec3 lightDirection = normalize(vec3(0., -1., -1.));
 
@@ -134,12 +137,12 @@ vec3 hsv2rgb(vec3 c){
 }
 
 void main() {
-    float noise = snoise(position*10. + time/20.);
+    float noise = snoise(position*5. + time/20.);
 
-    vec3 newPosition = position*(noise + 0.5);
+    vec3 newPosition = position*(noise + 0.6);
 
     // vColor = hsv2rgb(vec3(noise*0.1 + 0.03, 0.8, 0.8));
-    // vColor = hsv2rgb(vec3(noise*0.9, 0.1, 0.65));
+    // vColor = hsv2rgb(vec3(noise*0.9, 0.1, 0.85));
     vColor = hsv2rgb(vec3(noise*0.5 + 0.01, 0.2, 0.9));
 
     vNormal = normal;
@@ -206,12 +209,12 @@ export default class Sketch{
       this.scene.fog = new THREE.Fog(color, near, far);
     }
 
-    this.renderer = new THREE.WebGLRenderer({antialias: true});
+    this.renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
     this.width = window.innerWidth;
-    this.height = window.innerHeight;
+    this.height = window.innerWidth;
     this.renderer.setPixelRatio(window.devicePixelRatio);
     this.renderer.setSize(this.width, this.height);
-    this.renderer.setClearColor(0x343434, 1);
+    this.renderer.setClearColor(0x343434, 0);
 
     this.container = document.getElementById("container");
     this.width = this.container.offsetWidth;
@@ -225,7 +228,7 @@ export default class Sketch{
       1000
     );
 
-    this.camera.position.set(0, 0, 5.7);
+    this.camera.position.set(0, 0, 4);
     
     this.trackballControl = new THREE.TrackballControls(this.camera, this.renderer.domElement);
     this.trackballControl.rotateSpeed = 1.0; // need to speed it up a little
@@ -304,7 +307,7 @@ addParticles(){
     fragmentShader: fragmentParticles
   });
 
-  let n = 2000;
+  let n = 1000;
   let positions = new Float32Array( n * 3);
   this.particleGeometry = new THREE.BufferGeometry();
 
