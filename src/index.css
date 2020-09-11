@@ -43,7 +43,7 @@ html, body{
 
 .intro-text{
   position: absolute;
-  top: 97vw;
+  top: calc(107vw + 14px);
   
   max-width: 580px;
   padding: 3vw 8vw 3vw 20px;
@@ -285,7 +285,7 @@ footer .contact-links{
     z-index: 1;
     pointer-events: none;
 
-    padding: 3vw 18vw 3vw 6vw;
+    padding: 3vw 18vw 3vw 20px;
   }
   h1{
     font-size: 24px;
