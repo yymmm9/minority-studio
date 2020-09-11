@@ -43,10 +43,10 @@ html, body{
 
 .intro-text{
   position: absolute;
-  top: 60%;
+  top: 97vw;
   
   max-width: 580px;
-  padding: 3vw 8vw 3vw 6vw;
+  padding: 3vw 8vw 3vw 20px;
 
   z-index: 1;
   pointer-events: none;
@@ -218,7 +218,7 @@ footer .contact-links{
 
 .bielief{
   text-align: center!important;
-  padding: 156px 50px 84px;
+  padding: 156px 46px 84px;
     background-image: url(/mat/index/bielief-bg-min.jpg);
     background-size: cover;
     background-position: 0% -67%;
