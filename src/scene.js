@@ -183,22 +183,6 @@ void main() {
   gl_Position = projectionMatrix * mvPosition;
 }`;
 
-// import fragment from "https://cdn.jsdelivr.net/gh/yymmm9/stream-italy/yi/shaders/fragment.glsl";
-// import vertex from "https://cdn.jsdelivr.net/gh/yymmm9/stream-italy/yi/shaders/vertex.glsl";
-// import fragmentParticles from "https://cdn.jsdelivr.net/gh/yymmm9/stream-italy/yi/shaders/fragmentParticles.glsl";
-// import vertexParticles from "https://cdn.jsdelivr.net/gh/yymmm9/stream-italy/yi/shaders/vertexParticles.glsl";
-
-// import fragment from "./shaders/fragment.frag";
-// import vertex from "./shaders/vertex.vert";
-// import fragmentParticles from "./shaders/fragmentParticles.frag";
-// import vertexParticles from "./shaders/vertexParticles.vert";
-
-// import * as dat from "dat.gui";
-
-
-// import { TimelineMax } from "gsap";
-// let OrbitControls = require("three-orbit-controls")(THREE);
-
 export default class Sketch{
   constructor(selector){
     this.scene = new THREE.Scene();
