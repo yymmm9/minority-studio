@@ -236,8 +236,8 @@ export default class Sketch{
   }
 
   resize(){
-    this.width = this.container.offsetWidth;
-    this.height = this.container.offsetHeight;
+    this.width = window.innerWidth;
+    this.height = window.innerWidth;
     this.renderer.setSize(this.width, this.height);
     this.camera.aspect = this.width / this.height;
 
