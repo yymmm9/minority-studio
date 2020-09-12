@@ -43,7 +43,7 @@ html, body{
 
 .intro-text{
   position: absolute;
-  top: calc(107vw + 14px);
+  top: calc(100vw + 3px);
   
   max-width: 580px;
   padding: 3vw 8vw 3vw 20px;
