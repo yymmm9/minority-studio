@@ -193,14 +193,18 @@ export default class Sketch{
       this.scene.fog = new THREE.Fog(color, near, far);
     }
 
-    this.renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
-    this.width = window.innerWidth;
-    this.height = window.innerWidth;
+    this.renderer = new THREE.WebGLRenderer({
+      antialias: true, 
+      alpha: true
+      });
+    this.container = document.getElementById("container");
+    this.width = this.container.clientWidth;
+    this.height = this.container.clientWidth;
     this.renderer.setPixelRatio(window.devicePixelRatio);
     this.renderer.setSize(this.width, this.height);
     this.renderer.setClearColor(0x343434, 0);
 
-    this.container = document.getElementById("container");
+   
     this.width = this.container.offsetWidth;
     this.height = this.container.offsetHeight;
     this.container.appendChild(this.renderer.domElement);
@@ -236,8 +240,8 @@ export default class Sketch{
   }
 
   resize(){
-    this.width = window.innerWidth;
-    this.height = window.innerWidth;
+    this.width = this.container.clientWidth;
+    this.height = this.container.clientWidth;
     this.renderer.setSize(this.width, this.height);
     this.camera.aspect = this.width / this.height;
 
