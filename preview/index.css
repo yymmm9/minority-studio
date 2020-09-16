@@ -29,14 +29,14 @@ html, body{
   margin: 72px auto;
   text-align: center;
 }
-@media only screen and (min-width: 1025px){
+/* @media only screen and (min-width: 1025px){
   .an{
     display: block
   }
   header, main, footer{
     display:none;
   }
-}
+} */
 
 .intro-text{
   position: absolute;
