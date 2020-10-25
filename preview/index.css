@@ -450,6 +450,11 @@ footer .contact-links{
     max-width: 50vw;
   }
 
+  .pre p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .service-highlight-mock{
     right: -4vw;
     top: -10%;
