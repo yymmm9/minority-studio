@@ -282,7 +282,7 @@ footer .contact-links{
   }
 
   .cta::after, .arrow-down::after{
-    padding: 0px 17px;
+    padding: 0px 12px;
     height: 18px;
     background-size: contain;
   }
