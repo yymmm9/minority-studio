@@ -131,7 +131,7 @@ span.sup{
 span.highlight{
   font-size: 0.7em;
   color: var(--hl--i);
-  margin-bottom: -1.5em;
+  margin-bottom: -0.5em;
   display: block;
   font-weight: 500;
 }
